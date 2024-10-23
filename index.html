@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Diffusion Masked Autoencoders for Point Cloud Reconstruction.">
-  <meta name="keywords" content="DiffPMAE, Point cloud, MAE, Diffusion model, Masked Autoencoder">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DiffPMAE: Diffusion Masked Autoencoders for Point Cloud Reconstruction</title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Diffusion Masked Autoencoders for Point Cloud Reconstruction.">
+    <meta name="keywords" content="DiffPMAE, Point cloud, MAE, Diffusion model, Masked Autoencoder">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DiffPMAE: Diffusion Masked Autoencoders for Point Cloud Reconstruction</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-    gtag('js', new Date());
+        gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-  <link rel="icon" href="./static/images/icon.svg">
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+    <link rel="icon" href="./static/images/icon.svg">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 <body>
 
 
-
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DiffPMAE: Diffusion Masked Autoencoders for Point Cloud Reconstruction</h1>
-          <div class="is-size-5 publication-authors">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">DiffPMAE: Diffusion Masked Autoencoders for Point Cloud
+                        Reconstruction</h1>
+                    <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://github.com/TyraelDLee">Yanlong Li</a><sup>1</sup>,</span>
-            <span class="author-block">
+                        <span class="author-block">
               <span>Chamara Madarasingha</span><sup>2</sup>,</span>
-            <span class="author-block">
+                        <span class="author-block">
               <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/kanchana-thilakarathna.html">Kanchana Thilakarathna</a><sup>1</sup>,
             </span>
-          </div>
+                    </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Sydney,</span>
-            <span class="author-block"><sup>2</sup>University of New South Wales</span>
-          </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>University of Sydney,</span>
+                        <span class="author-block"><sup>2</sup>University of New South Wales</span>
+                    </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
                 <a href="./static/pdf/06294.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -76,7 +76,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+                            <span class="link-block">
                 <a href="./static/pdf/06294-supp.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -85,7 +85,7 @@
                   <span>Supplementary</span>
                 </a>
               </span>
-              <span class="link-block">
+                            <span class="link-block">
                 <a href="https://arxiv.org/abs/2312.03298"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -94,8 +94,8 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Code Link. -->
-              <span class="link-block">
+                            <!-- Code Link. -->
+                            <span class="link-block">
                 <a href="https://github.com/TyraelDLee/DiffPMAE"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -104,173 +104,222 @@
                   <span>Code</span>
                   </a>
               </span>
-            </div>
+                        </div>
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/Fig1.png" alt="fig1">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">DiffPMAE</span> inference process: MAE module first segments the point cloud to visible and masked regions and provides latent code for visible patches which is taken as a conditional input for the Diffusion process.
-      </h2>
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <img src="static/images/Fig1.png" alt="fig1">
+            <h2 class="subtitle has-text-centered">
+                <span class="dnerf">DiffPMAE</span> inference process: MAE module first segments the point cloud to
+                visible and masked regions and provides latent code for visible patches which is taken as a conditional
+                input for the Diffusion process.
+            </h2>
+        </div>
     </div>
-  </div>
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Point cloud streaming is increasingly getting popular, 
-            evolving into the norm for interactive service delivery and the future Metaverse.
-          </p>
-          <p>
-            However, the substantial volume of data associated with point clouds presents numerous challenges, 
-            particularly in terms of high bandwidth consumption and large storage capacity. 
-            Despite various solutions proposed thus far, with a focus on point cloud compression, 
-            upsampling, and completion, these reconstruction-related methods continue to fall short in delivering 
-            high fidelity point cloud output.
-          </p>
-          <p>
-            As a solution, in <span class="dnerf">DiffPMAE</span>, we propose an effective point cloud
-            reconstruction architecture. Inspired by self-supervised learning concepts, we combine Masked Auto-Encoding 
-            and Diffusion Model mechanism to remotely reconstruct point cloud data. By the nature of this reconstruction 
-            process, <span class="dnerf">DiffPMAE</span> can be extended to many related downstream tasks including point cloud compression, 
-            upsampling and completion. Leveraging ShapeNet-55 and ModelNet datasets with over 60000 objects, 
-            we validate the performance of <span class="dnerf">DiffPMAE</span> exceeding many state-of-the-art methods in-terms of auto-encoding 
-            and downstream tasks considered. We will release source code upon acceptance of the paper.
-          </p>
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Point cloud streaming is increasingly getting popular,
+                        evolving into the norm for interactive service delivery and the future Metaverse.
+                    </p>
+                    <p>
+                        However, the substantial volume of data associated with point clouds presents numerous
+                        challenges,
+                        particularly in terms of high bandwidth consumption and large storage capacity.
+                        Despite various solutions proposed thus far, with a focus on point cloud compression,
+                        upsampling, and completion, these reconstruction-related methods continue to fall short in
+                        delivering
+                        high fidelity point cloud output.
+                    </p>
+                    <p>
+                        As a solution, in <span class="dnerf">DiffPMAE</span>, we propose an effective point cloud
+                        reconstruction architecture. Inspired by self-supervised learning concepts, we combine Masked
+                        Auto-Encoding
+                        and Diffusion Model mechanism to remotely reconstruct point cloud data. By the nature of this
+                        reconstruction
+                        process, <span class="dnerf">DiffPMAE</span> can be extended to many related downstream tasks
+                        including point cloud compression,
+                        upsampling and completion. Leveraging ShapeNet-55 and ModelNet datasets with over 60000 objects,
+                        we validate the performance of <span class="dnerf">DiffPMAE</span> exceeding many
+                        state-of-the-art methods in-terms of auto-encoding
+                        and downstream tasks considered. We will release source code upon acceptance of the paper.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
+        <!--/ Abstract. -->
 
 
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Model Structure</h2>
-        <div class="structure">
-          <img src="static/images/structure.png" alt="structure">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Model Structure</h2>
+                <div class="structure">
+                    <img src="static/images/structure.png" alt="structure">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Results</h2>
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Reconstruction on ShapeNet</h2>
-          <p>
-            Reconstruction results of <span class="dnerf">DiffPMAE</span> with multiple categories. Input point cloud and predicted results are 2048 points. The predicted results are generated by <span class="dnerf">DiffPMAE</span> with mask ratio 0.75.
-          </p>
-          <img src="static/images/vis_recons_1.png" alt="rec-performance">
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-4">Reconstruction on Real-word</h2>
+    <div class="container is-max-desktop">
+      <!-- Diffusion. -->
         <div class="columns is-centered">
-          <div class="column content">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Diffusion process</h2>
+
+          <div class="content has-text-justified">
             <p>
-              Reconstruction results of <span class="dnerf">DiffPMAE</span> on ScanObjectNN dataset, 
-              main split without background. The predicted results are generated by 
-              <span class="dnerf">DiffPMAE</span> with mask ratio 0.75.
+              We segment the input point cloud object into visible patches (pink) and masked patches (grey),
+              the diffusion model will generate the masked patches guided by visible patches.
+              Use the slider here to explore the diffusion process on masked region.
             </p>
-            <img src="static/images/vis_no_bg_m.png" alt="rec-rw-performance">
           </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-3 has-text-centered" style="padding-right: 0">
+              <img src="./static/images/diffprocess/init.png" class="interpolation-image"
+                   alt="Initial status.">
+              <p>Start Status</p>
+            </div>
+            <span style="
+                        font-weight: bold;
+                        font-size: larger;
+                    ">→</span>
+            <div class="column interpolation-video-column" style="padding: .75rem 1.5rem">
+              <div id="interpolation-image-wrapper"><img src="./static/images/diffprocess/new_0.png"></div>
+              <input class="slider is-fullwidth is-large is-info" id="interpolation-slider" step="1" min="0"
+                     max="239" value="0" type="range">
+            </div>
+            <span style="
+                        font-weight: bold;
+                        font-size: larger;
+                    ">→</span>
+            <div class="column is-3 has-text-centered" style="padding-left: 0">
+              <img src="./static/images/diffprocess/final.png" class="interpolation-image"
+                   alt="Final status.">
+              <p class="is-bold">End Status</p>
+            </div>
+          </div>
+          <br>
 
         </div>
       </div>
-    </div>
-    <!--/ Matting. -->
 
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Upsampling</h3>
-        <div class="content has-text-justified">
-          <p>
-            Upsampling results of <span class="dnerf">DiffPMAE</span> with multiple categories. Input low resolution point
-            clouds are contains 2048 points, high resolution and generated results are contains 8192 points.
-            Our model is trained based on pairs of Hi-res GT and Lo-res GT and use Visible parts to generate the
-            Hi-res predicted results. The predicted results are generated by <span class="dnerf">DiffPMAE</span> with mask ratio 0.4.
-          </p>
-          <div style="display: flex;justify-content: center; width:100%">
-            <img src="static/images/vis_sr.png" alt="sr" style="width: 65%;">
-          </div>
+        <h2 class="title is-3">Results</h2>
+        <div class="columns is-centered">
+
+            <div class="column">
+                <div class="content">
+                    <h2 class="title is-4">Reconstruction on ShapeNet</h2>
+                    <p>
+                        Reconstruction results of <span class="dnerf">DiffPMAE</span> with multiple categories. Input
+                        point cloud and predicted results are 2048 points. The predicted results are generated by <span
+                            class="dnerf">DiffPMAE</span> with mask ratio 0.75.
+                    </p>
+                    <img src="static/images/vis_recons_1.png" alt="rec-performance">
+                </div>
+            </div>
+
+            <div class="column">
+                <h2 class="title is-4">Reconstruction on Real-word</h2>
+                <div class="columns is-centered">
+                    <div class="column content">
+                        <p>
+                            Reconstruction results of <span class="dnerf">DiffPMAE</span> on ScanObjectNN dataset,
+                            main split without background. The predicted results are generated by
+                            <span class="dnerf">DiffPMAE</span> with mask ratio 0.75.
+                        </p>
+                        <img src="static/images/vis_no_bg_m.png" alt="rec-rw-performance">
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!--/ Animation. -->
+        <!--/ Matting. -->
 
-  </div>
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h3 class="title is-4">Upsampling</h3>
+                <div class="content has-text-justified">
+                    <p>
+                        Upsampling results of <span class="dnerf">DiffPMAE</span> with multiple categories. Input low
+                        resolution point
+                        clouds are contains 2048 points, high resolution and generated results are contains 8192 points.
+                        Our model is trained based on pairs of Hi-res GT and Lo-res GT and use Visible parts to generate
+                        the
+                        Hi-res predicted results. The predicted results are generated by <span
+                            class="dnerf">DiffPMAE</span> with mask ratio 0.4.
+                    </p>
+                    <div style="display: flex;justify-content: center; width:100%">
+                        <img src="static/images/vis_sr.png" alt="sr" style="width: 65%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{li2024diffpmae,
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{li2024diffpmae,
     author = {Yanlong Li and Chamara Madarasingha and Kanchana Thilakarathna},
     title = {DiffPMAE: Diffusion Masked Autoencoders for Point Cloud Reconstruction},
     booktitle = {ECCV},
     year = {2024}
 }</code></pre>
-  </div>
+    </div>
 </section>
 
 
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/pdf/06294.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/TyraelDLee" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+    <div class="container">
+        <div class="content has-text-centered">
+            <a class="icon-link"
+               href="./static/pdf/06294.pdf">
+                <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="https://github.com/TyraelDLee" class="external-link" disabled>
+                <i class="fab fa-github"></i>
+            </a>
         </div>
-      </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        This means you are free to borrow the <a
+                            href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+                        we just ask that you link back to this page in the footer.
+                        Please remember to remove the analytics code included in the header of the website which
+                        you do not want on your website.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
 
 </body>
